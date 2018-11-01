@@ -1,0 +1,47 @@
+<div id="grid">
+  <div>
+      <h3>步骤一：上传图片</h3>
+      <p><label for="file">选择图片：</label><input type="file" name="file" id="file" accept="image/*"  /></p>
+      <p><label for="size">尺寸：</label>
+        <select name="size" id="size">
+          <option value="300_150">300 * 150</option>
+          <option value="100_100">100 * 100</option>
+          <option value="85_100">85 * 100</option>
+        </select>
+      </p>
+      <p><button type="submit" name="process" id="process">处理</button></p>
+  </div>
+  <div>
+    <h3>步骤二：预览</h3>
+    <p>
+      <label for="fname">文件名：</label>
+      <input id="fname" disabled type="text" />
+    </p>
+    <p id="preview"></p>
+  </div>
+  <div>
+    <h3>步骤三：保存 CDN</h3>
+    <p>
+      <label for="_fname">File：</label>
+      <input type="text" id="_fname" />
+    </p>
+    <p>
+      <label for="path">Path：</label>
+      <input type="text" id="path" value="imageCenter/" />
+    </p>
+    <p>
+      <label for="accessKey">accessKey：</label>
+      <input type="text" id="accessKey" />
+    </p>
+    <p>
+      <label for="secretKey">secretKey：</label>
+      <input type="text" id="secretKey" />
+    </p>
+    <p>
+      <label for="">Bucket：</label>
+      <input type="text" id="bucket" value="xilinjie" />
+    </p>
+    <p id="msg"></p>
+    <p><button name="uploadQiniu" id="uploadQiniu">保存到七牛 CDN</button></p>
+  </div>
+</div>
